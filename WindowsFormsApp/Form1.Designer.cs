@@ -36,6 +36,7 @@
             this.iconButtonChart = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
             this.panel2.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -79,7 +80,8 @@
             this.iconButtonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(10)))), ((int)(((byte)(26)))));
             this.iconButtonExit.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.iconButtonExit.FlatAppearance.BorderSize = 0;
-            this.iconButtonExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.iconButtonExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.iconButtonExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(83)))), ((int)(((byte)(26)))));
             this.iconButtonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonExit.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButtonExit.ForeColor = System.Drawing.Color.Transparent;
@@ -105,7 +107,8 @@
             this.iconButtonSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(10)))), ((int)(((byte)(26)))));
             this.iconButtonSettings.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButtonSettings.FlatAppearance.BorderSize = 0;
-            this.iconButtonSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.iconButtonSettings.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.iconButtonSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(83)))), ((int)(((byte)(26)))));
             this.iconButtonSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonSettings.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButtonSettings.ForeColor = System.Drawing.Color.Transparent;
@@ -132,7 +135,8 @@
             this.iconButtonChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(10)))), ((int)(((byte)(26)))));
             this.iconButtonChart.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButtonChart.FlatAppearance.BorderSize = 0;
-            this.iconButtonChart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.iconButtonChart.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.iconButtonChart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(83)))), ((int)(((byte)(26)))));
             this.iconButtonChart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonChart.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButtonChart.ForeColor = System.Drawing.Color.Transparent;
@@ -175,11 +179,22 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // cartesianChart1
+            // 
+            this.cartesianChart1.BackColor = System.Drawing.Color.White;
+            this.cartesianChart1.Location = new System.Drawing.Point(226, 21);
+            this.cartesianChart1.Name = "cartesianChart1";
+            this.cartesianChart1.Size = new System.Drawing.Size(562, 308);
+            this.cartesianChart1.TabIndex = 3;
+            this.cartesianChart1.Text = "cartesianChart1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(77)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cartesianChart1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -204,6 +219,7 @@
         private FontAwesome.Sharp.IconButton iconButtonSettings;
         private FontAwesome.Sharp.IconButton iconButtonExit;
         private System.Windows.Forms.Panel panel1;
+        private LiveCharts.WinForms.CartesianChart cartesianChart1;
     }
 }
 
