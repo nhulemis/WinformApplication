@@ -98,9 +98,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="icons\icons8_macos_close_64px.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="icons\icons8_cancel_25px.png" />
     <EmbeddedResource Include="icons\icons8_ok_25px.png" />
   </ItemGroup>
@@ -108,6 +105,12 @@
     <None Include="icons\icons8_task_completed_64px.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="icons\icons8_nutanix_64px.png" />
+    <None Include="icons\icons8_youtube_64px.png" />
+    <None Include="icons\icons8_shutdown_64px.png" />
+    <None Include="icons\icons8_decrease_64px.png" />
+    <None Include="icons\icons8_gears_64px.png" />
+    <None Include="icons\icons8_c_sharp_logo_64px.png" />
     <Content Include="icons\icons8_macos_close_25px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
