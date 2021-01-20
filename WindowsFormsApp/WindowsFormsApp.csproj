@@ -125,6 +125,12 @@
     <None Include="icons\icons8_decrease_64px.png" />
     <None Include="icons\icons8_gears_64px.png" />
     <None Include="icons\icons8_c_sharp_logo_64px.png" />
+    <EmbeddedResource Include="icons\icons8_cursor_25px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="icons\icons8_cursor_25px_1.png" />
+    <None Include="icons\icons8_cursor_25px_2.png" />
+    <None Include="icons\icons8_coffee_to_go_96px.png" />
     <Content Include="icons\icons8_macos_close_25px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
